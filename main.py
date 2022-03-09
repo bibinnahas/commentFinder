@@ -12,7 +12,13 @@ def bb_set_urls():
     module = ""
     raw_formatter = "?at=refs%2Fheads%2Fmaster"
 
-
+with open('path/to/file', newline='') as f:
+    reader = csv.reader(f)
+    data = list(reader)
+    repo_list = []
+    for sublist in data:
+        for item in sublist:
+            repo_list.append(item)
 
 def bb_url_former():
 
